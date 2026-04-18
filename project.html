@@ -1,30 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Proyectos</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyectos - Juan Miguel Fossi</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
-
 <body>
+  <header class="header" aria-label="Navegación principal">
+    <div class="logo" aria-label="Logo">JMF</div>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="index.html">Inicio</a>
+      <a href="about.html">Sobre mí</a>
+      <a href="proyectos.html" class="active">Proyectos</a>
+    </nav>
+  </header>
 
-<header class="header">
-  <h1>Proyectos</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-  </nav>
-</header>
+  <section class="section reveal" aria-label="Galería de Proyectos">
+    <h2>Proyectos</h2>
+    <p>Una selección de trabajos que muestran mi enfoque en branding, UX y producción audiovisual.</p>
 
-<section class="section">
-  <h2>Mis trabajos</h2>
+    <div class="grid-projects" aria-label="Proyectos">
+      <div class="card project" tabindex="0">
+        <img src="images/proyecto1.jpg" alt="Proyecto 1 - Branding" />
+        <div class="caption">Branding para startup</div>
+      </div>
+      <div class="card project" tabindex="0">
+        <img src="images/proyecto2.jpg" alt="Proyecto 2 - UI/UX" />
+        <div class="caption">UI/UX de app móvil</div>
+      </div>
+      <div class="card project" tabindex="0">
+        <img src="images/proyecto3.jpg" alt="Proyecto 3 - Audiovisual" />
+        <div class="caption">Video promocional</div>
+      </div>
+    </div>
+  </section>
 
-  <div class="cards">
-    <div class="card"><img src="images/proyecto1.jpg"></div>
-    <div class="card"><img src="images/proyecto2.jpg"></div>
-    <div class="card"><img src="images/proyecto3.jpg"></div>
-  </div>
-</section>
+  <footer class="footer">
+    <p>© 2024-2026 Juan Miguel Fossi. Todos los derechos reservados.</p>
+  </footer>
 
+  <script src="js/script.js"></script>
 </body>
 </html>
