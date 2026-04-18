@@ -107,3 +107,75 @@ nav a {
     flex-direction: column;
   }
 }
+
+
+
+
+
+/* ANIMACIÓN SCROLL */
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* HEADER GLASS */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+  background: rgba(0,0,0,0.4);
+}
+
+/* NAV HOVER PRO */
+nav a {
+  position: relative;
+  padding: 5px;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #4fc3f7;
+  left: 0;
+  bottom: -5px;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* CARDS MÁS PRO */
+.card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(79,195,247,0.3);
+}
+
+/* BOTÓN PRO */
+.btn {
+  background: linear-gradient(45deg, #4fc3f7, #00e5ff);
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #4fc3f7;
+}
