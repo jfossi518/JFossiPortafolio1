@@ -2,14 +2,14 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Juan Fossi</title>
+  <title>Juan Miguel Fossi</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
 <header class="header">
-  <h1>Juan Fossi</h1>
+  <h1>Juan Miguel Fossi</h1>
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About Me</a>
@@ -23,14 +23,23 @@
 </section>
 
 <section class="section">
+  <img src="images/foto.jpg" class="profile">
+  <h2>Sobre mí</h2>
+  <p>Creador digital enfocado en branding, UI/UX, audiovisual y marketing.</p>
+</section>
+
+<section class="section">
   <h2>Servicios</h2>
+
   <div class="cards">
-    <div class="card">Branding</div>
-    <div class="card">UI/UX</div>
-    <div class="card">Audiovisual</div>
-    <div class="card">Edición</div>
-    <div class="card">Marketing</div>
+    <div class="card" onclick="mostrar('branding')">Branding</div>
+    <div class="card" onclick="mostrar('uiux')">UI/UX</div>
+    <div class="card" onclick="mostrar('audiovisual')">Audiovisual</div>
+    <div class="card" onclick="mostrar('edicion')">Edición</div>
+    <div class="card" onclick="mostrar('marketing')">Marketing</div>
   </div>
+
+  <div id="contenido-servicio"></div>
 </section>
 
 <script src="js/script.js"></script>
