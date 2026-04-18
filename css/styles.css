@@ -1,8 +1,14 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #0a0a1a;
   color: white;
+
+  background: linear-gradient(rgba(10,10,30,0.9), rgba(10,10,30,0.9)),
+  url("https://images.unsplash.com/photo-1549692520-acc6669e2f0c");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /* HEADER */
@@ -11,30 +17,12 @@ body {
   justify-content: space-between;
   padding: 20px;
   background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(10px);
 }
 
 nav a {
   margin: 0 10px;
   text-decoration: none;
   color: white;
-  position: relative;
-}
-
-/* PSEUDOELEMENTO */
-nav a::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 2px;
-  background: #4fc3f7;
-  left: 0;
-  bottom: -5px;
-  transition: 0.3s;
-}
-
-nav a:hover::after {
-  width: 100%;
 }
 
 /* HERO */
@@ -62,6 +50,13 @@ nav a:hover::after {
   text-align: center;
 }
 
+/* FOTO */
+.profile {
+  width: 180px;
+  border-radius: 50%;
+  border: 3px solid #4fc3f7;
+}
+
 /* CARDS */
 .cards {
   display: flex;
@@ -75,17 +70,22 @@ nav a:hover::after {
   padding: 30px;
   border-radius: 10px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .card:hover {
-  transform: translateY(-10px);
+  transform: scale(1.05);
   background: rgba(79,195,247,0.2);
 }
 
-/* FOTO */
-.profile {
-  width: 200px;
-  border-radius: 50%;
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* CONTENIDO DINÁMICO */
+#contenido-servicio {
+  margin-top: 30px;
 }
 
 /* STATS */
