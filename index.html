@@ -2,142 +2,99 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Juan Miguel Fossi | Cyber Portfolio</title>
-<meta name="description" content="Portafolio futurista de Juan Miguel Fossi, estudiante de Creación Digital.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Miguel Fossi | Cyber Portfolio</title>
+  <meta name="description" content="Portafolio futurista de Juan Miguel Fossi, estudiante de Creación Digital.">
 
-<link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
 </head>
-
 <body>
 
-<!-- GRID BACKGROUND -->
-<div class="grid-bg"></div>
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <a href="#inicio" class="logo">JMF.</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#perfil">Perfil</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<!-- HEADER -->
-<header class="header">
+  <!-- ============ HERO / INICIO ============ -->
+  <section id="inicio" class="hero">
+    <p class="tag">CREADOR DIGITAL / BOGOTÁ</p>
+    <h1>JUAN MIGUEL <br> FOSSI</h1>
+    <p class="hero-text">
+      Estudiante de Creación Digital en la Universidad El Bosque.
+      Especializado en branding, diseño UI/UX, desarrollo web
+      y experiencias visuales modernas.
+    </p>
+    <div class="hero-buttons">
+      <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+      <a href="#perfil" class="btn btn-secondary">Mi perfil</a>
+    </div>
+  </section>
 
-<div class="logo">
-JMF<span>.</span>
-</div>
+  <!-- ============ PERFIL ============ -->
+  <section id="perfil" class="perfil">
+    <h2 class="section-title">STATUS</h2>
+    <ul class="status-list">
+      <li>Diseño Digital</li>
+      <li>UI / UX</li>
+      <li>Branding</li>
+      <li>Web Design</li>
+      <li>Marketing</li>
+    </ul>
+  </section>
 
-<nav class="nav">
-<a href="index.html" class="active">Inicio</a>
-<a href="aboutme.html">Perfil</a>
-<a href="project.html">Proyectos</a>
-</nav>
+  <!-- ============ PROYECTOS / SERVICIOS ============ -->
+  <section id="proyectos" class="servicios">
+    <p class="tag">SERVICIOS</p>
+    <h2 class="section-title">Lo que construyo</h2>
 
-</header>
+    <div class="cards">
+      <article class="card">
+        <h3>Branding</h3>
+        <p>Identidades visuales sólidas y memorables.</p>
+      </article>
+      <article class="card">
+        <h3>UI / UX</h3>
+        <p>Interfaces modernas con foco en experiencia.</p>
+      </article>
+      <article class="card">
+        <h3>Web</h3>
+        <p>Sitios rápidos, visuales y funcionales.</p>
+      </article>
+      <article class="card">
+        <h3>Marketing</h3>
+        <p>Estrategias digitales creativas.</p>
+      </article>
+    </div>
+  </section>
 
-<!-- HERO -->
+  <!-- ============ CTA / CONTACTO ============ -->
+  <section id="contacto" class="cta">
+    <p class="tag">READY TO BUILD</p>
+    <h2>Diseño ideas con visión futurista.</h2>
+    <a href="#proyectos" class="btn btn-primary">Explorar portafolio</a>
+  </section>
 
-<section class="hero">
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <p>© 2024 - 2026 Juan Miguel Fossi</p>
+  </footer>
 
-<div class="hero-left reveal">
-
-<p class="mini-title">CREADOR DIGITAL / BOGOTÁ</p>
-
-<h1>
-JUAN MIGUEL <br>
-<span>FOSSI</span>
-</h1>
-
-<p class="hero-text">
-Estudiante de Creación Digital en la Universidad El Bosque.
-Especializado en branding, diseño UI/UX, desarrollo web
-y experiencias visuales modernas.
-</p>
-
-<div class="hero-buttons">
-<a href="project.html" class="btn">Ver proyectos</a>
-<a href="aboutme.html" class="btn ghost">Mi perfil</a>
-</div>
-
-</div>
-
-<div class="hero-right reveal">
-
-<div class="cyber-card">
-
-<div class="cyber-line"></div>
-
-<h3>STATUS</h3>
-
-<ul>
-<li>Diseño Digital</li>
-<li>UI / UX</li>
-<li>Branding</li>
-<li>Web Design</li>
-<li>Marketing</li>
-</ul>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- SERVICES -->
-
-<section class="section reveal">
-
-<div class="section-top">
-<span>SERVICIOS</span>
-<h2>Lo que construyo</h2>
-</div>
-
-<div class="services-grid">
-
-<div class="service-box">
-<h3>Branding</h3>
-<p>Identidades visuales sólidas y memorables.</p>
-</div>
-
-<div class="service-box">
-<h3>UI / UX</h3>
-<p>Interfaces modernas con foco en experiencia.</p>
-</div>
-
-<div class="service-box">
-<h3>Web</h3>
-<p>Sitios rápidos, visuales y funcionales.</p>
-</div>
-
-<div class="service-box">
-<h3>Marketing</h3>
-<p>Estrategias digitales creativas.</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- CTA -->
-
-<section class="section reveal">
-
-<div class="cta-panel">
-
-<p>READY TO BUILD</p>
-
-<h2>Diseño ideas con visión futurista.</h2>
-
-<a href="project.html" class="btn">Explorar portafolio</a>
-
-</div>
-
-</section>
-
-<footer class="footer">
-© 2024 - 2026 Juan Miguel Fossi
-</footer>
-
-<script src="js/script.js"></script>
 </body>
 </html>
