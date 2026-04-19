@@ -1,100 +1,127 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Juan Miguel Fossi | Cyber Portfolio</title>
-  <meta name="description" content="Portafolio futurista de Juan Miguel Fossi, estudiante de Creación Digital.">
-
+  <title>Juan Miguel Fossi | Portafolio</title>
+  <meta name="description" content="Portafolio profesional de Juan Miguel Fossi">
+  
   <link rel="stylesheet" href="css/styles.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-  <style>
-    html { scroll-behavior: smooth; }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-  <!-- ============ NAVBAR ============ -->
-  <header class="navbar">
-    <a href="#inicio" class="logo">JMF.</a>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#perfil">Perfil</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+<header class="header">
 
-  <!-- ============ HERO / INICIO ============ -->
-  <section id="inicio" class="hero">
-    <p class="tag">CREADOR DIGITAL / BOGOTÁ</p>
-    <h1>JUAN MIGUEL <br> FOSSI</h1>
-    <p class="hero-text">
-      Estudiante de Creación Digital en la Universidad El Bosque.
-      Especializado en branding, diseño UI/UX, desarrollo web
-      y experiencias visuales modernas.
+  <div class="logo">JMF</div>
+
+  <nav class="nav">
+    <a href="index.html" class="active">Inicio</a>
+    <a href="aboutme.html">Sobre mí</a>
+    <a href="project.html">Proyectos</a>
+  </nav>
+
+</header>
+
+<section class="hero">
+
+  <div class="container">
+
+    <span class="tag">PORTAFOLIO DIGITAL</span>
+
+    <h1>
+      Creo experiencias digitales
+      <span>que conectan</span>
+    </h1>
+
+    <p>
+      Branding, diseño UI/UX, contenido audiovisual y marketing
+      para impulsar marcas modernas.
     </p>
+
     <div class="hero-buttons">
-      <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
-      <a href="#perfil" class="btn btn-secondary">Mi perfil</a>
+      <a href="project.html" class="btn">Ver proyectos</a>
+      <a href="aboutme.html" class="btn btn-outline">Conóceme</a>
     </div>
-  </section>
 
-  <!-- ============ PERFIL ============ -->
-  <section id="perfil" class="perfil">
-    <h2 class="section-title">STATUS</h2>
-    <ul class="status-list">
-      <li>Diseño Digital</li>
-      <li>UI / UX</li>
-      <li>Branding</li>
-      <li>Web Design</li>
-      <li>Marketing</li>
-    </ul>
-  </section>
+  </div>
 
-  <!-- ============ PROYECTOS / SERVICIOS ============ -->
-  <section id="proyectos" class="servicios">
-    <p class="tag">SERVICIOS</p>
-    <h2 class="section-title">Lo que construyo</h2>
+</section>
+
+<section class="section reveal">
+
+  <div class="container">
+
+    <h2>Servicios</h2>
 
     <div class="cards">
-      <article class="card">
+
+      <div class="card servicio-card" data-servicio="branding">
         <h3>Branding</h3>
-        <p>Identidades visuales sólidas y memorables.</p>
-      </article>
-      <article class="card">
+        <p>Identidad visual potente.</p>
+      </div>
+
+      <div class="card servicio-card" data-servicio="uiux">
         <h3>UI / UX</h3>
-        <p>Interfaces modernas con foco en experiencia.</p>
-      </article>
-      <article class="card">
-        <h3>Web</h3>
-        <p>Sitios rápidos, visuales y funcionales.</p>
-      </article>
-      <article class="card">
+        <p>Interfaces modernas.</p>
+      </div>
+
+      <div class="card servicio-card" data-servicio="audiovisual">
+        <h3>Audiovisual</h3>
+        <p>Contenido visual creativo.</p>
+      </div>
+
+      <div class="card servicio-card" data-servicio="marketing">
         <h3>Marketing</h3>
-        <p>Estrategias digitales creativas.</p>
-      </article>
+        <p>Estrategias de crecimiento.</p>
+      </div>
+
     </div>
-  </section>
 
-  <!-- ============ CTA / CONTACTO ============ -->
-  <section id="contacto" class="cta">
-    <p class="tag">READY TO BUILD</p>
-    <h2>Diseño ideas con visión futurista.</h2>
-    <a href="#proyectos" class="btn btn-primary">Explorar portafolio</a>
-  </section>
+    <div id="contenido-servicio" class="servicio-contenido"></div>
 
-  <!-- ============ FOOTER ============ -->
-  <footer class="footer">
-    <p>© 2024 - 2026 Juan Miguel Fossi</p>
-  </footer>
+  </div>
 
+</section>
+
+<section class="section reveal">
+
+  <div class="container">
+
+    <h2>Proyectos Destacados</h2>
+
+    <div class="cards">
+
+      <div class="card clickable" onclick="location.href='project.html'">
+        <h3>Startup Branding</h3>
+        <p>Diseño de marca y estrategia visual.</p>
+      </div>
+
+      <div class="card clickable" onclick="location.href='project.html'">
+        <h3>App Mobile</h3>
+        <p>Experiencia UX/UI para aplicación.</p>
+      </div>
+
+      <div class="card clickable" onclick="location.href='project.html'">
+        <h3>Video Ads</h3>
+        <p>Campañas visuales impactantes.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p>© 2024 - 2026 Juan Miguel Fossi</p>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
